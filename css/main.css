@@ -1,13 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
 
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "VT323", monospace;
   background: #363636;
   color: #eeeeee;
 }
 
+#containerApp {
+  background: #eeeeee;
+  margin-bottom: 85px;
+}
+
 #titleApp {
   margin: 25px 0;
+  color: #363636;
+  font-size: 42px;
+}
+
+.emoji {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle {
@@ -46,4 +62,12 @@ body {
   width: 100px;
   border-radius: 15%;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  #titleApp {
+    margin: 25px 0;
+    color: #363636;
+    font-size: 36px;
+  }
 }
