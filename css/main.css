@@ -1,15 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #363636;
+  color: #eeeeee;
+}
+
+#titleApp {
+  margin: 25px 0;
+}
+
 .circle {
-  border: 1px solid #363636;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+  border: 3px solid #eeeeee;
+  margin: 8px;
+  height: 100px;
+  width: 100px;
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+.circle:hover {
+  border: 3px solid #eeeeee;
+  background: rgba(238, 238, 238, 0.5);
+  margin: 8px;
+  height: 100px;
+  width: 100px;
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+.circle:active {
+  border: 3px solid #eeeeee;
+  background: #eeeeee;
+  margin: 8px;
+  height: 100px;
+  width: 100px;
+  border-radius: 15%;
   cursor: pointer;
 }
 
 .circleColor {
-  background: #363636;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+  background: #eeeeee;
+  margin: 8px;
+  height: 100px;
+  width: 100px;
+  border-radius: 15%;
   cursor: pointer;
 }
