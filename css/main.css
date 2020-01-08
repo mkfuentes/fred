@@ -1,0 +1,15 @@
+.circle {
+  border: 1px solid #363636;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.circleColor {
+  background: #363636;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
