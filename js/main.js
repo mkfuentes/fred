@@ -28,13 +28,9 @@ console.log("currentGame", game.currentGame);
 console.log(game.currentGame.length);
  */
 
-
-
 function uno() {
 
-    var random = Math.random();
-    var multiplicacion = random * 9;
-    var floor = Math.floor(multiplicacion);
+    var floor = Math.floor(Math.random()*9);
     var actualPosition = game.possibilities[floor];
 
 //console.log(`Número random: ${random}`);
@@ -71,5 +67,6 @@ function compare(){
         return console.log("bien")
     }else{
             return console.log("mal")
+
         }
     }
