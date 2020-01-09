@@ -44,7 +44,7 @@ function uno() {
   itemActual.classList.add("circleColor");
   setTimeout(function() {
     itemActual.classList.remove("circleColor");
-  }, 500);
+  }, 750);
 }
 
 uno();
