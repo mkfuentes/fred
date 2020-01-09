@@ -13,10 +13,29 @@ body {
   margin-bottom: 85px;
 }
 
-#titleApp {
+.titleApp {
   margin: 25px 0;
   color: #363636;
   font-size: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.containerAbout {
+  color: #363636;
+  display: flex;
+  align-items: center;
+  border: 2px solid #eeeeee;
+}
+
+.buttonAbout {
+  color: #363636;
+  display: flex;
+  align-items: center;
+  border: 2px solid #363636;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.25rem;
 }
 
 .emoji {
@@ -69,5 +88,9 @@ body {
     margin: 25px 0;
     color: #363636;
     font-size: 36px;
+  }
+
+  .containerAbout {
+    display: none;
   }
 }
