@@ -2,18 +2,20 @@ var game = {
   count: 0,
   possibilities: [
     "zorro",
-    "caballo",
+    "rana",
     "gallina",
     "panda",
-    "rana",
-    "mapache",
-    "unicornio",
+    "gato",
     "perro",
+    "caballo",
+    "mapache",
+    "oso",
+
     "conejo"
   ],
   currentGame: [],
   player: [],
-  strict: false
+  strict: true
 };
 
 function clearGame() {
@@ -34,16 +36,31 @@ function showMoves() {
     if (i >= game.currentGame.length) {
       clearInterval(moves);
     }
-  }, 600);
+  }, 1000);
 
   clearPlayer();
 }
 
 function playGame(field) {
-  $(field).addClass("circleColor");
+  console.log("este es el field", field);
+  var circle = document.getElementsByClassName("circle");
+  var arrayCircle = Array.from(circle);
+  console.log(arrayCircle);
+
+  arrayCircle.map(elemento => {
+    if (elemento.classList.contains("circleColor")) {
+      elemento.classList.remove("circleColor");
+    }
+  });
+
+  document.getElementById(field).classList.add("circleColor");
+  // a.classList.addClass("circleColor");
+  // $(field).addClass("circleColor");
   setTimeout(function() {
-    $(field).removeClass("circleColor");
-  }, 8000);
+    document.getElementById(field).classList.remove("circleColor");
+    //$(field).removeClass("circleColor");
+  }, 500);
+  console.log("field1", field);
 }
 
 function clearPlayer() {
@@ -63,7 +80,7 @@ function playerTurn(x) {
     game.currentGame[game.player.length - 1]
   ) {
     if (game.strict) {
-      alert("Se reinicia de cero");
+      alert("Erroneo, volvamos a empezar :)");
       newGame();
     } else {
       alert("Intentar de nuevo");
@@ -74,9 +91,9 @@ function playerTurn(x) {
     var check = game.player.length === game.currentGame.length;
     if (check) {
       if (game.count == 20) {
-        alert("You won! Congrats.");
+        alert("Alcanzaste el máximo nivel, felicidades :D");
       } else {
-        alert("Next round!");
+        alert("¡Muy bien! Siguiente nivel :)");
         nextLevel();
       }
     }
@@ -105,14 +122,14 @@ function generateMove() {
 
 function addCount() {
   game.count++;
-  $("#clickNumber").addClass("animated fadeOutDown");
+  $("#clickNumber").addClass("animated fadeOutRight");
 
   setTimeout(function() {
     $("#clickNumber")
-      .removeClass("fadeOutDown")
+      .removeClass("fadeOutRight")
       .html(game.count)
-      .addClass("fadeInDown");
-  }, 200);
+      .addClass("fadeInLeft");
+  }, 20);
 
   generateMove();
 }

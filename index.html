@@ -11,6 +11,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./css/animations.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -20,7 +21,7 @@
         <div class="container">
             <div class="row justify-content-between">
                 <h1 class="titleApp">
-                    🐥 <span class="titleText"> El fabuloso Fred</span>
+                    <span class="tossing">🐥</span> <span class="titleText ml-3"> El fabuloso Fred</span>
                 </h1>
                 <div class="containerAbout">
                     <h6 class="m-0 buttonAbout">Reiniciar</h6>
@@ -30,58 +31,62 @@
     </div>
 
     <div class="container">
-
-        <div class="row">
+        <div class="row level">
             <div id="gameNumber">
+                <h2>Nivel</h2>
                 <h2 id="clickNumber">0</h2>
             </div>
         </div>
+    </div>
+
+    <div class="container animated zoomIn">
 
         <div class="row justify-content-center">
             <div class="circle emoji" id="zorro" onclick="addToPlayer(this.id)">
-                🦊
+                <span class="tossing">🦊</span>
             </div>
 
-            <div class="circle emoji" id="caballo" onclick="addToPlayer(this.id)">
-                🐴
+            <div class="circle emoji" id="rana" onclick="addToPlayer(this.id)">
+                <span class="tossing">🐸</span>
             </div>
 
             <div class="circle emoji" id="gallina" onclick="addToPlayer(this.id)">
-                🐔
+                <span class="tossing">🐔</span>
             </div>
         </div>
 
         <div class="row justify-content-center">
             <div class="circle emoji" id="panda" onclick="addToPlayer(this.id)">
-                🐼
+                <span class="tossing">🐼</span>
             </div>
 
-            <div class="circle emoji" id="rana" onclick="addToPlayer(this.id)">
-                🐸
+            <div class="circle emoji" id="gato" onclick="addToPlayer(this.id)">
+                <span class="tossing">🐱</span>
             </div>
 
-            <div class="circle emoji" id="mapache" onclick="addToPlayer(this.id)">
-                🦝
+            <div class="circle emoji" id="perro" onclick="addToPlayer(this.id)">
+                <span class="tossing">🐶</span>
+
             </div>
         </div>
 
         <div class="row justify-content-center">
-            <div class="circle emoji" id="unicornio" onclick="addToPlayer(this.id)">
-                🦄
+            <div class="circle emoji" id="caballo" onclick="addToPlayer(this.id)">
+                <span class="tossing">🐴</span>
             </div>
 
-            <div class="circle emoji" id="perro" onclick="addToPlayer(this.id)">
-                🐶
+            <div class="circle emoji" id="mapache" onclick="addToPlayer(this.id)">
+                <span class="tossing">🦝</span>
             </div>
 
-            <div class="circle emoji" id="conejo" onclick="addToPlayer(this.id)">
-                🐰
+            <div class="circle emoji" id="oso" onclick="addToPlayer(this.id)">
+                <span class="tossing">🐻</span>
             </div>
         </div>
 
-        <div class="containerReiniciar">
+        <!-- <div class="containerReiniciar">
             <h6 class="m-0 buttonReiniciar" onclick="uno()">Add</h6>
-        </div>
+        </div> -->
 
         <div class="container">
             <h6 class="puntos">
@@ -99,6 +104,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
     <script src="./js/feature.js"></script>
 </body>
 
