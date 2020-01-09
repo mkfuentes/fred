@@ -1,17 +1,17 @@
 var game = {
-  possibilities: [
-    "zorro",
-    "caballo",
-    "gallina",
-    "panda",
-    "rana",
-    "mapache",
-    "unicornio",
-    "perro",
-    "conejo"
-  ],
-  currentGame: [],
-  points: 0
+    possibilities: [
+        "zorro",
+        "caballo",
+        "gallina",
+        "panda",
+        "rana",
+        "mapache",
+        "unicornio",
+        "perro",
+        "conejo"
+    ],
+    currentGame: [],
+    points: 0
 };
 
 /* var random = Math.random();
@@ -39,12 +39,13 @@ var actualPosition = game.possibilities[floor];
 console.log(actualPosition, "es el actual");
 console.log(typeof actualPosition);
 
+
 function uno() {
-  var itemActual = document.getElementById(actualPosition);
-  itemActual.classList.add("circleColor");
-  setTimeout(function() {
-    itemActual.classList.remove("circleColor");
-  }, 750);
+    var itemActual = document.getElementById(actualPosition);
+    itemActual.classList.add("circleColor");
+    setTimeout(function() {
+        itemActual.classList.remove("circleColor");
+    }, 750);
 }
 
 uno();
