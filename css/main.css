@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
+body {
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "VT323", monospace;
+    background: #363636;
+    color: #eeeeee;
+}
+
+#containerApp {
+    background: #eeeeee;
+    margin-bottom: 85px;
+}
+
+.titleApp {
+    margin: 25px 0;
+    color: #363636;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.containerAbout {
+    color: #363636;
+    display: flex;
+    align-items: center;
+    border: 2px solid #eeeeee;
+}
+
+.buttonAbout {
+    color: #363636;
+    display: flex;
+    align-items: center;
+    border: 2px solid #363636;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.containerReiniciar {
+    margin-top: 25px;
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    border: 2px solid #363636;
+    justify-content: center;
+}
+
+.buttonReiniciar {
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    border: 2px solid #eeeeee;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.emoji {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    border: 3px solid #eeeeee;
+    margin: 8px;
+    height: 100px;
+    width: 100px;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.circle:hover {
+    border: 3px solid #eeeeee;
+    background: rgba(238, 238, 238, 0.5);
+    margin: 8px;
+    height: 100px;
+    width: 100px;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.circle:active {
+    border: 3px solid #eeeeee;
+    background: #eeeeee;
+    margin: 8px;
+    height: 100px;
+    width: 100px;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.circleColor {
+    background: #eeeeee;
+    margin: 8px;
+    height: 100px;
+    width: 100px;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    #titleApp {
+        margin: 25px 0;
+        color: #363636;
+        font-size: 36px;
+    }
+    .titleText {
+        display: none;
+    }
+}
