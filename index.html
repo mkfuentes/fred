@@ -7,6 +7,127 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fred App</title>
     <!-- BOOSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="container-fluid" id="containerApp">
+        <div class="container">
+            <div class="row justify-content-between">
+                <h1 class="titleApp">
+                    <span class="tossing">🐥</span> <span class="titleText ml-3"> El fabuloso Fred</span>
+                </h1>
+                <div class="containerAbout" value="Reiniciar" onclick="location.reload()">
+                    <h6 class="m-0 buttonAbout">Reiniciar</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center mb-3">
+            <h3>Bienvenido, <span id="user"> </span></h3>
+        </div>
+
+        <div class="row level">
+            <div id="gameNumber">
+                <h2>Nivel</h2>
+                <h2 id="clickNumber">0</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container animated zoomIn">
+
+        <div class="row justify-content-center">
+            <div class="circle emoji" id="zorro" onclick="addToPlayer(this.id)">
+                <span class="tossing">🦊</span>
+            </div>
+
+            <div class="circle emoji" id="rana" onclick="addToPlayer(this.id)">
+                <span class="tossing">🐸</span>
+            </div>
+
+            <div class="circle emoji" id="gallina" onclick="addToPlayer(this.id)">
+                <span class="tossing">🐔</span>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="circle emoji" id="panda" onclick="addToPlayer(this.id)">
+                <span class="tossing">🐼</span>
+            </div>
+
+            <div class="circle emoji" id="gato" onclick="addToPlayer(this.id)">
+                <span class="tossing">🐱</span>
+            </div>
+
+            <div class="circle emoji" id="perro" onclick="addToPlayer(this.id)">
+                <span class="tossing">🐶</span>
+
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="circle emoji" id="caballo" onclick="addToPlayer(this.id)">
+                <span class="tossing">🐴</span>
+            </div>
+
+            <div class="circle emoji" id="mapache" onclick="addToPlayer(this.id)">
+                <span class="tossing">🦝</span>
+            </div>
+
+            <div class="circle emoji" id="oso" onclick="addToPlayer(this.id)">
+                <span class="tossing">🐻</span>
+            </div>
+        </div>
+
+        <!-- HINT -->
+
+        <div class="row d-flex justify-content-center mt-5" onclick="showMoves()">
+            <span class="buttonAbout">Pista</span>
+        </div>
+
+        <!-- <div class=" containerReiniciar">
+                <h6 class="m-0 buttonReiniciar" onclick="uno()">Add</h6>
+        </div> -->
+
+        <div class="container">
+            <h6 class="puntos">
+
+            </h6>
+        </div>
+    </div>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/feature.js"></script>
+</body>
+
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fred App</title>
+    <!-- BOOSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
 </head>

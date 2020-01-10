@@ -1,5 +1,155 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
+
+body {
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "VT323", monospace;
+  background: #3b3b3b;
+  color: #eeeeee;
+}
+
+#containerApp {
+  background: #2e2e2e;
+  margin-bottom: 35px;
+}
+
+#gameNumber {
+  margin-bottom: 35px;
+}
+
+.titleApp {
+  margin: 25px 0;
+  color: #eeeeee;
+  font-size: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.containerAbout {
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  border: 2px solid #2e2e2e;
+}
+
+.buttonAbout {
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  border: 2px solid #eeeeee;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.buttonAbout:hover {
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  border: 2px solid #363636;
+  background: rgba(54, 54, 54, 0.5);
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.buttonAbout:active {
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  border: 2px solid #363636;
+  background: rgb(54, 54, 54);
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.containerReiniciar {
+  margin-top: 25px;
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  border: 2px solid #363636;
+  justify-content: center;
+}
+
+.buttonReiniciar {
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  border: 2px solid #eeeeee;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.level {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.emoji {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  border: 3px solid #eeeeee;
+  margin: 8px;
+  height: 100px;
+  width: 100px;
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+/* .circle:hover {
+  border: 3px solid #eeeeee;
+  background: rgba(238, 238, 238, 0.5);
+  margin: 8px;
+  height: 100px;
+  width: 100px;
+  border-radius: 15%;
+  cursor: pointer;
+} */
+
+.circle:active {
+  border: 3px solid #eeeeee;
+  background: #eeeeee;
+  margin: 8px;
+  height: 100px;
+  width: 100px;
+  border-radius: 15%;
+  cursor: pointer;
+}
+
+.circleColor {
+  background: #eeeeee;
+  margin: 8px;
+  height: 100px;
+  width: 100px;
+  border-radius: 15%;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+  #titleApp {
+    margin: 25px 0;
+    color: #363636;
+    font-size: 36px;
+  }
+
+  .titleText {
+    display: none;
+  }
+}
+=======
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=VT323&display=swap");
 body {
     /* font-family: "Poppins", sans-serif; */
     font-family: "VT323", monospace;
