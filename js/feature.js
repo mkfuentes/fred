@@ -9,13 +9,11 @@ var game = {
     "perro",
     "caballo",
     "mapache",
-    "oso",
-
-    "conejo"
+    "oso"
   ],
   currentGame: [],
   player: [],
-  strict: true
+  restart: true
 };
 
 function clearGame() {
@@ -28,16 +26,33 @@ function newGame() {
   clearGame();
 }
 
+// function showMoves() {
+//   var i = 0;
+//   var moves = setInterval(function() {
+//     playGame(game.currentGame[i]);
+//     i++;
+//     if (i >= game.currentGame.length) {
+//       clearInterval(moves);
+//     }
+//   }, 1000);
+
+//   clearPlayer();
+// }
+
 function showMoves() {
   var i = 0;
   var moves = setInterval(function() {
     playGame(game.currentGame[i]);
+    let b = document.getElementById(game.currentGame[i]);
+    b.classList.add("circleColor");
+    setTimeout(function() {
+      b.classList.remove("circleColor");
+    }, 600);
     i++;
     if (i >= game.currentGame.length) {
       clearInterval(moves);
     }
   }, 1000);
-
   clearPlayer();
 }
 
@@ -54,11 +69,8 @@ function playGame(field) {
   });
 
   document.getElementById(field).classList.add("circleColor");
-  // a.classList.addClass("circleColor");
-  // $(field).addClass("circleColor");
   setTimeout(function() {
     document.getElementById(field).classList.remove("circleColor");
-    //$(field).removeClass("circleColor");
   }, 500);
   console.log("field1", field);
 }
@@ -79,8 +91,8 @@ function playerTurn(x) {
     game.player[game.player.length - 1] !==
     game.currentGame[game.player.length - 1]
   ) {
-    if (game.strict) {
-      alert("Erroneo, volvamos a empezar :)");
+    if (game.restart) {
+      alert("Erroneo, volvamos a empezar :D");
       newGame();
     } else {
       alert("Intentar de nuevo");
@@ -90,7 +102,7 @@ function playerTurn(x) {
     console.log("Bien");
     var check = game.player.length === game.currentGame.length;
     if (check) {
-      if (game.count == 20) {
+      if (game.count == 100) {
         alert("Alcanzaste el máximo nivel, felicidades :D");
       } else {
         alert("¡Muy bien! Siguiente nivel :)");
@@ -120,15 +132,18 @@ function generateMove() {
   showMoves();
 }
 
+//NIVEL IMPRESO EN EL DOM CON ANIMACION
+
 function addCount() {
   game.count++;
-  $("#clickNumber").addClass("animated fadeOutRight");
+  document
+    .getElementById("clickNumber")
+    .classList.add("animated", "fadeOutRights");
 
   setTimeout(function() {
-    $("#clickNumber")
-      .removeClass("fadeOutRight")
-      .html(game.count)
-      .addClass("fadeInLeft");
+    document.getElementById("clickNumber").classList.remove("fadeOutRight");
+    document.getElementById("clickNumber").classList.add("fadeInLeft");
+    $("#clickNumber").html(game.count);
   }, 20);
 
   generateMove();

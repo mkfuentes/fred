@@ -132,6 +132,8 @@ body {
   width: 100px;
   border-radius: 15%;
   cursor: pointer;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 @media only screen and (max-width: 767px) {
