@@ -1,3 +1,14 @@
+var userName = prompt("¡Hola!, ¿Cuál es tu nombre?");
+// alert(`Bienvinido, ${userName}.`);
+
+if (userName === null || userName === "") {
+  // alert(`Usuario desconocido`);
+  userName = "usuario.";
+  document.getElementById("user").innerHTML = userName;
+} else {
+  document.getElementById("user").innerHTML = userName;
+}
+
 var game = {
   count: 0,
   possibilities: [
